@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5316C4B12AC617AC00E15665 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5316C4B02AC617AC00E15665 /* TimerManager.swift */; };
+		53543BF52AC5D52300163CB1 /* TimerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53543BF42AC5D52300163CB1 /* TimerTest.swift */; };
 		5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF782AC219A1009A8667 /* SportTimerApp.swift */; };
 		5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7A2AC219A1009A8667 /* ContentView.swift */; };
 		5364EF7D2AC219A1009A8667 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7C2AC219A1009A8667 /* Item.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5316C4B02AC617AC00E15665 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		53543BF42AC5D52300163CB1 /* TimerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTest.swift; sourceTree = "<group>"; };
 		5364EF752AC219A1009A8667 /* SportTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5364EF782AC219A1009A8667 /* SportTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerApp.swift; sourceTree = "<group>"; };
 		5364EF7A2AC219A1009A8667 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			children = (
 				5364EF782AC219A1009A8667 /* SportTimerApp.swift */,
 				5364EF7A2AC219A1009A8667 /* ContentView.swift */,
+				53543BF42AC5D52300163CB1 /* TimerTest.swift */,
+				5316C4B02AC617AC00E15665 /* TimerManager.swift */,
 				5364EF7C2AC219A1009A8667 /* Item.swift */,
 				5364EF7E2AC219A4009A8667 /* Assets.xcassets */,
 				5364EF802AC219A4009A8667 /* SportTimer.entitlements */,
@@ -265,8 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */,
+				5316C4B12AC617AC00E15665 /* TimerManager.swift in Sources */,
 				5364EF7D2AC219A1009A8667 /* Item.swift in Sources */,
 				5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */,
+				53543BF52AC5D52300163CB1 /* TimerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

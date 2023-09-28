@@ -25,7 +25,7 @@ struct SportTimerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TimerTest()
         }
         .modelContainer(sharedModelContainer)
     }
