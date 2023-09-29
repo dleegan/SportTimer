@@ -25,6 +25,9 @@
 		5364EF8E2AC219A4009A8667 /* SportTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF8D2AC219A4009A8667 /* SportTimerTests.swift */; };
 		5364EF982AC219A4009A8667 /* SportTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF972AC219A4009A8667 /* SportTimerUITests.swift */; };
 		5364EF9A2AC219A4009A8667 /* SportTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF992AC219A4009A8667 /* SportTimerUITestsLaunchTests.swift */; };
+		539E9F392AC75359003CE2D1 /* StepModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9F382AC75359003CE2D1 /* StepModeModel.swift */; };
+		539E9F3D2AC75477003CE2D1 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9F3C2AC75477003CE2D1 /* SessionView.swift */; };
+		539E9F3F2AC7548D003CE2D1 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9F3E2AC7548D003CE2D1 /* SessionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		5364EF932AC219A4009A8667 /* SportTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5364EF972AC219A4009A8667 /* SportTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerUITests.swift; sourceTree = "<group>"; };
 		5364EF992AC219A4009A8667 /* SportTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		539E9F382AC75359003CE2D1 /* StepModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModeModel.swift; sourceTree = "<group>"; };
+		539E9F3C2AC75477003CE2D1 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		539E9F3E2AC7548D003CE2D1 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
 		53F00B3A2AC727D7009034EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		53F00B3C2AC727D7009034EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -166,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				5364EF782AC219A1009A8667 /* SportTimerApp.swift */,
+				539E9F352AC7507A003CE2D1 /* Models */,
+				539E9F362AC751D4003CE2D1 /* Core */,
 				5364EF7A2AC219A1009A8667 /* ContentView.swift */,
 				53543BF42AC5D52300163CB1 /* TimerTest.swift */,
 				5316C4B02AC617AC00E15665 /* TimerManager.swift */,
@@ -201,6 +209,55 @@
 				5364EF992AC219A4009A8667 /* SportTimerUITestsLaunchTests.swift */,
 			);
 			path = SportTimerUITests;
+			sourceTree = "<group>";
+		};
+		539E9F342AC7506D003CE2D1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		539E9F352AC7507A003CE2D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				539E9F382AC75359003CE2D1 /* StepModeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		539E9F362AC751D4003CE2D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				539E9F372AC75218003CE2D1 /* Session */,
+				539E9F342AC7506D003CE2D1 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		539E9F372AC75218003CE2D1 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				539E9F3B2AC7543B003CE2D1 /* ViewModels */,
+				539E9F3A2AC75431003CE2D1 /* Views */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		539E9F3A2AC75431003CE2D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				539E9F3C2AC75477003CE2D1 /* SessionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		539E9F3B2AC7543B003CE2D1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				539E9F3E2AC7548D003CE2D1 /* SessionViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		53F00B392AC727D7009034EC /* Frameworks */ = {
@@ -384,10 +441,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539E9F3D2AC75477003CE2D1 /* SessionView.swift in Sources */,
+				539E9F3F2AC7548D003CE2D1 /* SessionViewModel.swift in Sources */,
 				5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */,
 				5316C4B12AC617AC00E15665 /* TimerManager.swift in Sources */,
 				5364EF7D2AC219A1009A8667 /* Item.swift in Sources */,
 				5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */,
+				539E9F392AC75359003CE2D1 /* StepModeModel.swift in Sources */,
 				53543BF52AC5D52300163CB1 /* TimerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,27 +1,28 @@
 //
-//  TimerManager.swift
+//  SessionViewModel.swift
 //  SportTimer
 //
-//  Created by dleegan on 28/09/2023.
+//  Created by dleegan on 29/09/2023.
 //
 
 import Foundation
 import SwiftUI
 import ActivityKit
 
-class TimerManager: ObservableObject {
-    enum stopWatchMode {
-        case running
-        case stopped
-        case paused
-    }
-    
+enum stopWatchMode {
+    case running
+    case stopped
+    case paused
+}
+
+class SessionViewModel: ObservableObject {
     @Published var mode: stopWatchMode
     @Published var secondsElapsed: Int
+
     var step: StepModeModel
     var stepId: Int
     var timer = Timer()
-    
+
     let session: [StepModeModel] = [
         StepModeModel(name: .prepare, time: 30),
         StepModeModel(name: .work, time: 30),
