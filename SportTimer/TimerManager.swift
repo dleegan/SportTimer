@@ -7,21 +7,23 @@
 
 import Foundation
 import SwiftUI
+import ActivityKit
 
-class Session: Identifiable {
+struct Session: Identifiable {
     enum mode {
         case prepare
         case work
         case rest
     }
     
+    let id: UUID = UUID()
     let name: mode
     let time: Int
     
-    init(name: mode, time: Int) {
-        self.name = name
-        self.time = time
-    }
+//    init(name: mode, time: Int) {
+//        self.name = name
+//        self.time = time
+//    }
     
     func getName() -> String {
         switch self.name {

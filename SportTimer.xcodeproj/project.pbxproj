@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53096DA42AC72FD000752FDD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F00B3A2AC727D7009034EC /* WidgetKit.framework */; };
+		53096DA52AC72FD000752FDD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F00B3C2AC727D7009034EC /* SwiftUI.framework */; };
+		53096DA82AC72FD000752FDD /* SessionStatusBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53096DA72AC72FD000752FDD /* SessionStatusBundle.swift */; };
+		53096DAA2AC72FD000752FDD /* SessionStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53096DA92AC72FD000752FDD /* SessionStatusLiveActivity.swift */; };
+		53096DAC2AC72FD000752FDD /* SessionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53096DAB2AC72FD000752FDD /* SessionStatus.swift */; };
+		53096DAE2AC72FD000752FDD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53096DAD2AC72FD000752FDD /* AppIntent.swift */; };
+		53096DB02AC72FD200752FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53096DAF2AC72FD200752FDD /* Assets.xcassets */; };
+		53096DB42AC72FD200752FDD /* SessionStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53096DA32AC72FD000752FDD /* SessionStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5316C4B12AC617AC00E15665 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5316C4B02AC617AC00E15665 /* TimerManager.swift */; };
 		53543BF52AC5D52300163CB1 /* TimerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53543BF42AC5D52300163CB1 /* TimerTest.swift */; };
 		5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF782AC219A1009A8667 /* SportTimerApp.swift */; };
@@ -20,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		53096DB22AC72FD200752FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5364EF6D2AC219A1009A8667 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53096DA22AC72FD000752FDD;
+			remoteInfo = SessionStatusExtension;
+		};
 		5364EF8A2AC219A4009A8667 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5364EF6D2AC219A1009A8667 /* Project object */;
@@ -36,7 +51,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		53F00B4D2AC727D9009034EC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				53096DB42AC72FD200752FDD /* SessionStatusExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		53096DA32AC72FD000752FDD /* SessionStatusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SessionStatusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		53096DA72AC72FD000752FDD /* SessionStatusBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatusBundle.swift; sourceTree = "<group>"; };
+		53096DA92AC72FD000752FDD /* SessionStatusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatusLiveActivity.swift; sourceTree = "<group>"; };
+		53096DAB2AC72FD000752FDD /* SessionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatus.swift; sourceTree = "<group>"; };
+		53096DAD2AC72FD000752FDD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		53096DAF2AC72FD200752FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53096DB12AC72FD200752FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5316C4B02AC617AC00E15665 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		53543BF42AC5D52300163CB1 /* TimerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTest.swift; sourceTree = "<group>"; };
 		5364EF752AC219A1009A8667 /* SportTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,9 +88,20 @@
 		5364EF932AC219A4009A8667 /* SportTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5364EF972AC219A4009A8667 /* SportTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerUITests.swift; sourceTree = "<group>"; };
 		5364EF992AC219A4009A8667 /* SportTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53F00B3A2AC727D7009034EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		53F00B3C2AC727D7009034EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		53096DA02AC72FD000752FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53096DA52AC72FD000752FDD /* SwiftUI.framework in Frameworks */,
+				53096DA42AC72FD000752FDD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5364EF722AC219A1009A8667 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,12 +126,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53096DA62AC72FD000752FDD /* SessionStatus */ = {
+			isa = PBXGroup;
+			children = (
+				53096DA72AC72FD000752FDD /* SessionStatusBundle.swift */,
+				53096DA92AC72FD000752FDD /* SessionStatusLiveActivity.swift */,
+				53096DAB2AC72FD000752FDD /* SessionStatus.swift */,
+				53096DAD2AC72FD000752FDD /* AppIntent.swift */,
+				53096DAF2AC72FD200752FDD /* Assets.xcassets */,
+				53096DB12AC72FD200752FDD /* Info.plist */,
+			);
+			path = SessionStatus;
+			sourceTree = "<group>";
+		};
 		5364EF6C2AC219A1009A8667 = {
 			isa = PBXGroup;
 			children = (
 				5364EF772AC219A1009A8667 /* SportTimer */,
 				5364EF8C2AC219A4009A8667 /* SportTimerTests */,
 				5364EF962AC219A4009A8667 /* SportTimerUITests */,
+				53096DA62AC72FD000752FDD /* SessionStatus */,
+				53F00B392AC727D7009034EC /* Frameworks */,
 				5364EF762AC219A1009A8667 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +157,7 @@
 				5364EF752AC219A1009A8667 /* SportTimer.app */,
 				5364EF892AC219A4009A8667 /* SportTimerTests.xctest */,
 				5364EF932AC219A4009A8667 /* SportTimerUITests.xctest */,
+				53096DA32AC72FD000752FDD /* SessionStatusExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +203,35 @@
 			path = SportTimerUITests;
 			sourceTree = "<group>";
 		};
+		53F00B392AC727D7009034EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F00B3A2AC727D7009034EC /* WidgetKit.framework */,
+				53F00B3C2AC727D7009034EC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		53096DA22AC72FD000752FDD /* SessionStatusExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53096DB72AC72FD200752FDD /* Build configuration list for PBXNativeTarget "SessionStatusExtension" */;
+			buildPhases = (
+				53096D9F2AC72FD000752FDD /* Sources */,
+				53096DA02AC72FD000752FDD /* Frameworks */,
+				53096DA12AC72FD000752FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SessionStatusExtension;
+			productName = SessionStatusExtension;
+			productReference = 53096DA32AC72FD000752FDD /* SessionStatusExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5364EF742AC219A1009A8667 /* SportTimer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5364EF9D2AC219A4009A8667 /* Build configuration list for PBXNativeTarget "SportTimer" */;
@@ -150,10 +239,12 @@
 				5364EF712AC219A1009A8667 /* Sources */,
 				5364EF722AC219A1009A8667 /* Frameworks */,
 				5364EF732AC219A1009A8667 /* Resources */,
+				53F00B4D2AC727D9009034EC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				53096DB32AC72FD200752FDD /* PBXTargetDependency */,
 			);
 			name = SportTimer;
 			productName = SportTimer;
@@ -206,6 +297,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					53096DA22AC72FD000752FDD = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					5364EF742AC219A1009A8667 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -235,11 +329,20 @@
 				5364EF742AC219A1009A8667 /* SportTimer */,
 				5364EF882AC219A4009A8667 /* SportTimerTests */,
 				5364EF922AC219A4009A8667 /* SportTimerUITests */,
+				53096DA22AC72FD000752FDD /* SessionStatusExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		53096DA12AC72FD000752FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53096DB02AC72FD200752FDD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5364EF732AC219A1009A8667 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +369,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		53096D9F2AC72FD000752FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53096DA82AC72FD000752FDD /* SessionStatusBundle.swift in Sources */,
+				53096DAE2AC72FD000752FDD /* AppIntent.swift in Sources */,
+				53096DAC2AC72FD000752FDD /* SessionStatus.swift in Sources */,
+				53096DAA2AC72FD000752FDD /* SessionStatusLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5364EF712AC219A1009A8667 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +412,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		53096DB32AC72FD200752FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53096DA22AC72FD000752FDD /* SessionStatusExtension */;
+			targetProxy = 53096DB22AC72FD200752FDD /* PBXContainerItemProxy */;
+		};
 		5364EF8B2AC219A4009A8667 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5364EF742AC219A1009A8667 /* SportTimer */;
@@ -311,6 +430,65 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		53096DB52AC72FD200752FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2G65FHL8TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SessionStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SessionStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dleegan.SportTimer.one.SessionStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53096DB62AC72FD200752FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2G65FHL8TB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SessionStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SessionStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dleegan.SportTimer.one.SessionStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		5364EF9B2AC219A4009A8667 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,17 +606,21 @@
 		5364EF9E2AC219A4009A8667 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SportTimer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SportTimer.one;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,31 +635,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dleegan.SportTimer;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dleegan.SportTimer.one;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5364EF9F2AC219A4009A8667 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SportTimer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SportTimer.one;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -492,14 +679,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dleegan.SportTimer;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dleegan.SportTimer.one;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -596,6 +784,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		53096DB72AC72FD200752FDD /* Build configuration list for PBXNativeTarget "SessionStatusExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53096DB52AC72FD200752FDD /* Debug */,
+				53096DB62AC72FD200752FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5364EF702AC219A1009A8667 /* Build configuration list for PBXProject "SportTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
