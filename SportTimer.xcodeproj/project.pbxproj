@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53096DA42AC72FD000752FDD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F00B3A2AC727D7009034EC /* WidgetKit.framework */; };
-		53096DA52AC72FD000752FDD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F00B3C2AC727D7009034EC /* SwiftUI.framework */; };
-		53096DA82AC72FD000752FDD /* SessionStatusBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53096DA72AC72FD000752FDD /* SessionStatusBundle.swift */; };
-		53096DAA2AC72FD000752FDD /* SessionStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53096DA92AC72FD000752FDD /* SessionStatusLiveActivity.swift */; };
-		53096DAC2AC72FD000752FDD /* SessionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53096DAB2AC72FD000752FDD /* SessionStatus.swift */; };
-		53096DAE2AC72FD000752FDD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53096DAD2AC72FD000752FDD /* AppIntent.swift */; };
-		53096DB02AC72FD200752FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53096DAF2AC72FD200752FDD /* Assets.xcassets */; };
-		53096DB42AC72FD200752FDD /* SessionStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53096DA32AC72FD000752FDD /* SessionStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5316C4B12AC617AC00E15665 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5316C4B02AC617AC00E15665 /* TimerManager.swift */; };
-		53543BF52AC5D52300163CB1 /* TimerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53543BF42AC5D52300163CB1 /* TimerTest.swift */; };
+		53036D672AC898B1007FDF6D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F00B3A2AC727D7009034EC /* WidgetKit.framework */; };
+		53036D682AC898B1007FDF6D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F00B3C2AC727D7009034EC /* SwiftUI.framework */; };
+		53036D6B2AC898B1007FDF6D /* SessionStatusBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53036D6A2AC898B1007FDF6D /* SessionStatusBundle.swift */; };
+		53036D6D2AC898B1007FDF6D /* SessionStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53036D6C2AC898B1007FDF6D /* SessionStatusLiveActivity.swift */; };
+		53036D6F2AC898B1007FDF6D /* SessionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53036D6E2AC898B1007FDF6D /* SessionStatus.swift */; };
+		53036D712AC898B1007FDF6D /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53036D702AC898B1007FDF6D /* AppIntent.swift */; };
+		53036D732AC898B2007FDF6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53036D722AC898B2007FDF6D /* Assets.xcassets */; };
+		53036D772AC898B2007FDF6D /* SessionStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53036D662AC898B1007FDF6D /* SessionStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF782AC219A1009A8667 /* SportTimerApp.swift */; };
 		5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7A2AC219A1009A8667 /* ContentView.swift */; };
 		5364EF7D2AC219A1009A8667 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7C2AC219A1009A8667 /* Item.swift */; };
@@ -28,14 +26,22 @@
 		539E9F392AC75359003CE2D1 /* StepModeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9F382AC75359003CE2D1 /* StepModeModel.swift */; };
 		539E9F3D2AC75477003CE2D1 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9F3C2AC75477003CE2D1 /* SessionView.swift */; };
 		539E9F3F2AC7548D003CE2D1 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9F3E2AC7548D003CE2D1 /* SessionViewModel.swift */; };
+		539E9F422AC775F6003CE2D1 /* ending.wav in Resources */ = {isa = PBXBuildFile; fileRef = 539E9F412AC775F6003CE2D1 /* ending.wav */; };
+		539E9F442AC7764A003CE2D1 /* whistle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 539E9F432AC7764A003CE2D1 /* whistle.wav */; };
+		539E9F472AC77FAD003CE2D1 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9F462AC77FAD003CE2D1 /* SoundManager.swift */; };
+		539E9F4A2AC78065003CE2D1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E9F492AC78065003CE2D1 /* Color.swift */; };
+		53B0585C2AC8946900098D50 /* SessionStatusAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B0585B2AC8946900098D50 /* SessionStatusAttributes.swift */; };
+		53DC5D882AC82E2A0022A6D6 /* SessionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */; };
+		53DC623E2AC811A80001AB45 /* WorkTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC623D2AC811A80001AB45 /* WorkTogether.swift */; };
+		53DC62402AC822970001AB45 /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC623F2AC822970001AB45 /* TabNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53096DB22AC72FD200752FDD /* PBXContainerItemProxy */ = {
+		53036D752AC898B2007FDF6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5364EF6D2AC219A1009A8667 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 53096DA22AC72FD000752FDD;
+			remoteGlobalIDString = 53036D652AC898B1007FDF6D;
 			remoteInfo = SessionStatusExtension;
 		};
 		5364EF8A2AC219A4009A8667 /* PBXContainerItemProxy */ = {
@@ -61,7 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				53096DB42AC72FD200752FDD /* SessionStatusExtension.appex in Embed Foundation Extensions */,
+				53036D772AC898B2007FDF6D /* SessionStatusExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,15 +75,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		53096DA32AC72FD000752FDD /* SessionStatusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SessionStatusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		53096DA72AC72FD000752FDD /* SessionStatusBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatusBundle.swift; sourceTree = "<group>"; };
-		53096DA92AC72FD000752FDD /* SessionStatusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatusLiveActivity.swift; sourceTree = "<group>"; };
-		53096DAB2AC72FD000752FDD /* SessionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatus.swift; sourceTree = "<group>"; };
-		53096DAD2AC72FD000752FDD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
-		53096DAF2AC72FD200752FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		53096DB12AC72FD200752FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5316C4B02AC617AC00E15665 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
-		53543BF42AC5D52300163CB1 /* TimerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTest.swift; sourceTree = "<group>"; };
+		53036D662AC898B1007FDF6D /* SessionStatusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SessionStatusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		53036D6A2AC898B1007FDF6D /* SessionStatusBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatusBundle.swift; sourceTree = "<group>"; };
+		53036D6C2AC898B1007FDF6D /* SessionStatusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatusLiveActivity.swift; sourceTree = "<group>"; };
+		53036D6E2AC898B1007FDF6D /* SessionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStatus.swift; sourceTree = "<group>"; };
+		53036D702AC898B1007FDF6D /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		53036D722AC898B2007FDF6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53036D742AC898B2007FDF6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5364EF752AC219A1009A8667 /* SportTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5364EF782AC219A1009A8667 /* SportTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerApp.swift; sourceTree = "<group>"; };
 		5364EF7A2AC219A1009A8667 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,17 +98,25 @@
 		539E9F382AC75359003CE2D1 /* StepModeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModeModel.swift; sourceTree = "<group>"; };
 		539E9F3C2AC75477003CE2D1 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		539E9F3E2AC7548D003CE2D1 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		539E9F412AC775F6003CE2D1 /* ending.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ending.wav; sourceTree = "<group>"; };
+		539E9F432AC7764A003CE2D1 /* whistle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whistle.wav; sourceTree = "<group>"; };
+		539E9F462AC77FAD003CE2D1 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		539E9F492AC78065003CE2D1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		53B0585B2AC8946900098D50 /* SessionStatusAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionStatusAttributes.swift; path = SportTimer/SessionStatusAttributes.swift; sourceTree = SOURCE_ROOT; };
+		53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListView.swift; sourceTree = "<group>"; };
+		53DC623D2AC811A80001AB45 /* WorkTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTogether.swift; sourceTree = "<group>"; };
+		53DC623F2AC822970001AB45 /* TabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
 		53F00B3A2AC727D7009034EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		53F00B3C2AC727D7009034EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		53096DA02AC72FD000752FDD /* Frameworks */ = {
+		53036D632AC898B1007FDF6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53096DA52AC72FD000752FDD /* SwiftUI.framework in Frameworks */,
-				53096DA42AC72FD000752FDD /* WidgetKit.framework in Frameworks */,
+				53036D682AC898B1007FDF6D /* SwiftUI.framework in Frameworks */,
+				53036D672AC898B1007FDF6D /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,15 +144,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53096DA62AC72FD000752FDD /* SessionStatus */ = {
+		53036D692AC898B1007FDF6D /* SessionStatus */ = {
 			isa = PBXGroup;
 			children = (
-				53096DA72AC72FD000752FDD /* SessionStatusBundle.swift */,
-				53096DA92AC72FD000752FDD /* SessionStatusLiveActivity.swift */,
-				53096DAB2AC72FD000752FDD /* SessionStatus.swift */,
-				53096DAD2AC72FD000752FDD /* AppIntent.swift */,
-				53096DAF2AC72FD200752FDD /* Assets.xcassets */,
-				53096DB12AC72FD200752FDD /* Info.plist */,
+				53036D6A2AC898B1007FDF6D /* SessionStatusBundle.swift */,
+				53036D6C2AC898B1007FDF6D /* SessionStatusLiveActivity.swift */,
+				53036D6E2AC898B1007FDF6D /* SessionStatus.swift */,
+				53036D702AC898B1007FDF6D /* AppIntent.swift */,
+				53036D722AC898B2007FDF6D /* Assets.xcassets */,
+				53036D742AC898B2007FDF6D /* Info.plist */,
 			);
 			path = SessionStatus;
 			sourceTree = "<group>";
@@ -151,7 +163,7 @@
 				5364EF772AC219A1009A8667 /* SportTimer */,
 				5364EF8C2AC219A4009A8667 /* SportTimerTests */,
 				5364EF962AC219A4009A8667 /* SportTimerUITests */,
-				53096DA62AC72FD000752FDD /* SessionStatus */,
+				53036D692AC898B1007FDF6D /* SessionStatus */,
 				53F00B392AC727D7009034EC /* Frameworks */,
 				5364EF762AC219A1009A8667 /* Products */,
 			);
@@ -163,7 +175,7 @@
 				5364EF752AC219A1009A8667 /* SportTimer.app */,
 				5364EF892AC219A4009A8667 /* SportTimerTests.xctest */,
 				5364EF932AC219A4009A8667 /* SportTimerUITests.xctest */,
-				53096DA32AC72FD000752FDD /* SessionStatusExtension.appex */,
+				53036D662AC898B1007FDF6D /* SessionStatusExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,13 +184,15 @@
 			isa = PBXGroup;
 			children = (
 				5364EF782AC219A1009A8667 /* SportTimerApp.swift */,
+				53B0585B2AC8946900098D50 /* SessionStatusAttributes.swift */,
+				539E9F452AC77F6B003CE2D1 /* Utilities */,
+				539E9F482AC78033003CE2D1 /* Extensions */,
 				539E9F352AC7507A003CE2D1 /* Models */,
 				539E9F362AC751D4003CE2D1 /* Core */,
 				5364EF7A2AC219A1009A8667 /* ContentView.swift */,
-				53543BF42AC5D52300163CB1 /* TimerTest.swift */,
-				5316C4B02AC617AC00E15665 /* TimerManager.swift */,
 				5364EF7C2AC219A1009A8667 /* Item.swift */,
 				5364EF7E2AC219A4009A8667 /* Assets.xcassets */,
+				539E9F402AC775AF003CE2D1 /* Sounds */,
 				5364EF802AC219A4009A8667 /* SportTimer.entitlements */,
 				5364EF842AC219A4009A8667 /* Info.plist */,
 				5364EF812AC219A4009A8667 /* Preview Content */,
@@ -222,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				539E9F382AC75359003CE2D1 /* StepModeModel.swift */,
+				53DC623D2AC811A80001AB45 /* WorkTogether.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,8 +244,10 @@
 		539E9F362AC751D4003CE2D1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				539E9F372AC75218003CE2D1 /* Session */,
 				539E9F342AC7506D003CE2D1 /* Components */,
+				539E9F372AC75218003CE2D1 /* Session */,
+				53DC62422AC82C390001AB45 /* SessionsList */,
+				53DC62412AC822A00001AB45 /* TabNavigation */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -260,6 +277,63 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		539E9F402AC775AF003CE2D1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				539E9F432AC7764A003CE2D1 /* whistle.wav */,
+				539E9F412AC775F6003CE2D1 /* ending.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		539E9F452AC77F6B003CE2D1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				539E9F462AC77FAD003CE2D1 /* SoundManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		539E9F482AC78033003CE2D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				539E9F492AC78065003CE2D1 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		53DC62412AC822A00001AB45 /* TabNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				53DC623F2AC822970001AB45 /* TabNavigation.swift */,
+			);
+			path = TabNavigation;
+			sourceTree = "<group>";
+		};
+		53DC62422AC82C390001AB45 /* SessionsList */ = {
+			isa = PBXGroup;
+			children = (
+				53DC62442AC82D260001AB45 /* ViewModels */,
+				53DC62432AC82D120001AB45 /* Views */,
+			);
+			path = SessionsList;
+			sourceTree = "<group>";
+		};
+		53DC62432AC82D120001AB45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53DC62442AC82D260001AB45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		53F00B392AC727D7009034EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,13 +346,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53096DA22AC72FD000752FDD /* SessionStatusExtension */ = {
+		53036D652AC898B1007FDF6D /* SessionStatusExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53096DB72AC72FD200752FDD /* Build configuration list for PBXNativeTarget "SessionStatusExtension" */;
+			buildConfigurationList = 53036D782AC898B2007FDF6D /* Build configuration list for PBXNativeTarget "SessionStatusExtension" */;
 			buildPhases = (
-				53096D9F2AC72FD000752FDD /* Sources */,
-				53096DA02AC72FD000752FDD /* Frameworks */,
-				53096DA12AC72FD000752FDD /* Resources */,
+				53036D622AC898B1007FDF6D /* Sources */,
+				53036D632AC898B1007FDF6D /* Frameworks */,
+				53036D642AC898B1007FDF6D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -286,7 +360,7 @@
 			);
 			name = SessionStatusExtension;
 			productName = SessionStatusExtension;
-			productReference = 53096DA32AC72FD000752FDD /* SessionStatusExtension.appex */;
+			productReference = 53036D662AC898B1007FDF6D /* SessionStatusExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		5364EF742AC219A1009A8667 /* SportTimer */ = {
@@ -301,7 +375,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				53096DB32AC72FD200752FDD /* PBXTargetDependency */,
+				53036D762AC898B2007FDF6D /* PBXTargetDependency */,
 			);
 			name = SportTimer;
 			productName = SportTimer;
@@ -354,7 +428,7 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					53096DA22AC72FD000752FDD = {
+					53036D652AC898B1007FDF6D = {
 						CreatedOnToolsVersion = 15.0;
 					};
 					5364EF742AC219A1009A8667 = {
@@ -384,19 +458,19 @@
 			projectRoot = "";
 			targets = (
 				5364EF742AC219A1009A8667 /* SportTimer */,
+				53036D652AC898B1007FDF6D /* SessionStatusExtension */,
 				5364EF882AC219A4009A8667 /* SportTimerTests */,
 				5364EF922AC219A4009A8667 /* SportTimerUITests */,
-				53096DA22AC72FD000752FDD /* SessionStatusExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		53096DA12AC72FD000752FDD /* Resources */ = {
+		53036D642AC898B1007FDF6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53096DB02AC72FD200752FDD /* Assets.xcassets in Resources */,
+				53036D732AC898B2007FDF6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,8 +478,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539E9F422AC775F6003CE2D1 /* ending.wav in Resources */,
 				5364EF832AC219A4009A8667 /* Preview Assets.xcassets in Resources */,
 				5364EF7F2AC219A4009A8667 /* Assets.xcassets in Resources */,
+				539E9F442AC7764A003CE2D1 /* whistle.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,14 +502,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		53096D9F2AC72FD000752FDD /* Sources */ = {
+		53036D622AC898B1007FDF6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53096DA82AC72FD000752FDD /* SessionStatusBundle.swift in Sources */,
-				53096DAE2AC72FD000752FDD /* AppIntent.swift in Sources */,
-				53096DAC2AC72FD000752FDD /* SessionStatus.swift in Sources */,
-				53096DAA2AC72FD000752FDD /* SessionStatusLiveActivity.swift in Sources */,
+				53036D6B2AC898B1007FDF6D /* SessionStatusBundle.swift in Sources */,
+				53036D712AC898B1007FDF6D /* AppIntent.swift in Sources */,
+				53036D6F2AC898B1007FDF6D /* SessionStatus.swift in Sources */,
+				53036D6D2AC898B1007FDF6D /* SessionStatusLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,14 +517,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DC623E2AC811A80001AB45 /* WorkTogether.swift in Sources */,
 				539E9F3D2AC75477003CE2D1 /* SessionView.swift in Sources */,
 				539E9F3F2AC7548D003CE2D1 /* SessionViewModel.swift in Sources */,
+				53B0585C2AC8946900098D50 /* SessionStatusAttributes.swift in Sources */,
 				5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */,
-				5316C4B12AC617AC00E15665 /* TimerManager.swift in Sources */,
+				539E9F4A2AC78065003CE2D1 /* Color.swift in Sources */,
+				53DC5D882AC82E2A0022A6D6 /* SessionsListView.swift in Sources */,
 				5364EF7D2AC219A1009A8667 /* Item.swift in Sources */,
 				5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */,
+				53DC62402AC822970001AB45 /* TabNavigation.swift in Sources */,
 				539E9F392AC75359003CE2D1 /* StepModeModel.swift in Sources */,
-				53543BF52AC5D52300163CB1 /* TimerTest.swift in Sources */,
+				539E9F472AC77FAD003CE2D1 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,10 +552,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		53096DB32AC72FD200752FDD /* PBXTargetDependency */ = {
+		53036D762AC898B2007FDF6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53096DA22AC72FD000752FDD /* SessionStatusExtension */;
-			targetProxy = 53096DB22AC72FD200752FDD /* PBXContainerItemProxy */;
+			target = 53036D652AC898B1007FDF6D /* SessionStatusExtension */;
+			targetProxy = 53036D752AC898B2007FDF6D /* PBXContainerItemProxy */;
 		};
 		5364EF8B2AC219A4009A8667 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -490,13 +570,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		53096DB52AC72FD200752FDD /* Debug */ = {
+		53036D792AC898B2007FDF6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SessionStatus/Info.plist;
@@ -519,13 +599,13 @@
 			};
 			name = Debug;
 		};
-		53096DB62AC72FD200752FDD /* Release */ = {
+		53036D7A2AC898B2007FDF6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SessionStatus/Info.plist;
@@ -671,7 +751,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -689,8 +769,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -715,7 +795,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -733,8 +813,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -844,11 +924,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53096DB72AC72FD200752FDD /* Build configuration list for PBXNativeTarget "SessionStatusExtension" */ = {
+		53036D782AC898B2007FDF6D /* Build configuration list for PBXNativeTarget "SessionStatusExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53096DB52AC72FD200752FDD /* Debug */,
-				53096DB62AC72FD200752FDD /* Release */,
+				53036D792AC898B2007FDF6D /* Debug */,
+				53036D7A2AC898B2007FDF6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

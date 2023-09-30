@@ -2,7 +2,7 @@
 //  SessionStatus.swift
 //  SessionStatus
 //
-//  Created by dleegan on 29/09/2023.
+//  Created by dleegan on 30/09/2023.
 //
 
 import WidgetKit
@@ -42,14 +42,11 @@ struct SessionStatusEntryView : View {
 
     var body: some View {
         VStack {
-            ForEach (1 ..< 4, id: \.self) {_ in 
-                Text("Time:")
-            }
-//            Text("Time:")
-//            Text(entry.date, style: .time)
-//
-//            Text("Favorite Emoji:")
-//            Text(entry.configuration.favoriteEmoji)
+            Text("Time:")
+            Text(entry.date, style: .time)
+
+            Text("Favorite Emoji:")
+            Text(entry.configuration.favoriteEmoji)
         }
     }
 }

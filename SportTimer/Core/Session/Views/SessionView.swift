@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct SessionView: View {
-    @ObservedObject var vm = TimerManager()
+    @ObservedObject var vm = SessionViewModel()
     
     var body: some View {
         VStack {
             HStack {
-                Spacer()
-                
                 Button(action: {
                     vm.mode == .paused || vm.mode == .stopped ?
                     vm.start() : vm.pause()
@@ -26,16 +24,18 @@ struct SessionView: View {
                     .foregroundStyle(Color.white)
                 })
             }
-            .frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(.horizontal)
             
-            Text(String(format: "%d", vm.secondsElapsed))
+            Text(String(format: "%d", vm.counter))
                 .font(.system(size: 120))
                 .fontWeight(.bold)
                 .foregroundStyle(Color.white)
             
-            //Spacer()
-            
+            Text("\(vm.step.getName())")
+                .bold()
+                .foregroundStyle(.white)
+
             List {
                 ForEach(vm.session) { acti in
                     Text("\(acti.getName()) " + "\(acti.time)")
