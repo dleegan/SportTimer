@@ -34,6 +34,7 @@
 		53DC5D882AC82E2A0022A6D6 /* SessionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */; };
 		53DC623E2AC811A80001AB45 /* WorkTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC623D2AC811A80001AB45 /* WorkTogether.swift */; };
 		53DC62402AC822970001AB45 /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC623F2AC822970001AB45 /* TabNavigation.swift */; };
+		53EB0D622ACA1CB80021BB8B /* SessionViewV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EB0D612ACA1CB80021BB8B /* SessionViewV2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListView.swift; sourceTree = "<group>"; };
 		53DC623D2AC811A80001AB45 /* WorkTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTogether.swift; sourceTree = "<group>"; };
 		53DC623F2AC822970001AB45 /* TabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
+		53EB0D612ACA1CB80021BB8B /* SessionViewV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewV2.swift; sourceTree = "<group>"; };
 		53F00B3A2AC727D7009034EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		53F00B3C2AC727D7009034EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				539E9F3C2AC75477003CE2D1 /* SessionView.swift */,
+				53EB0D612ACA1CB80021BB8B /* SessionViewV2.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EB0D622ACA1CB80021BB8B /* SessionViewV2.swift in Sources */,
 				53DC623E2AC811A80001AB45 /* WorkTogether.swift in Sources */,
 				539E9F3D2AC75477003CE2D1 /* SessionView.swift in Sources */,
 				539E9F3F2AC7548D003CE2D1 /* SessionViewModel.swift in Sources */,

@@ -52,12 +52,20 @@ class SessionViewModel: ObservableObject {
             pushType: nil
         )
 
+        var futureDate: Date = Calendar.current.date(byAdding: .second, value: self.counter, to: Date()) ?? Date()
+        
+
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            if (self.counter <= 1) {
+            let remaining = Calendar.current.dateComponents([.second], from: Date(), to: futureDate)
+            self.counter = remaining.second ?? 0
+
+            print("\(self.counter)")
+            if (self.counter < 1) {
                 self.stepId += 1
                 if (self.stepId <= self.session.count - 1) {
                     self.step = self.session[self.stepId]
                     self.counter = self.step.time
+                    futureDate = Calendar.current.date(byAdding: .second, value: self.counter, to: Date()) ?? Date()
                     SoundManager.instance.playSound(stepSound: .whistle)
                 } else {
                     self.stop()
@@ -66,15 +74,7 @@ class SessionViewModel: ObservableObject {
                 if (self.counter <= 4) {
                     SoundManager.instance.playSound(stepSound: .ending)
                 }
-                self.counter -= 1
-            }
-            Task {
-                await self.activity?.update(
-                    ActivityContent<SessionStatusAttributes.ContentState>(
-                        state: SessionStatusAttributes.ContentState(counter: self.counter, stepName: self.step.getName()),
-                        staleDate: nil
-                    )
-                )
+//                self.counter -= 1
             }
         }
     }
@@ -82,6 +82,17 @@ class SessionViewModel: ObservableObject {
     func pause() {
         timer.invalidate()
         mode = .paused
+    }
+    
+    func updateWidget() {
+        Task {
+            await self.activity?.update(
+                ActivityContent<SessionStatusAttributes.ContentState>(
+                    state: SessionStatusAttributes.ContentState(counter: self.counter, stepName: self.step.getName()),
+                    staleDate: nil
+                )
+            )
+        }
     }
     
     func stop() {
