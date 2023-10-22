@@ -13,6 +13,8 @@ struct StepModeModel: Identifiable {
         case prepare
         case work
         case rest
+        case rest_between_step
+        case cool_down
     }
     
     let id: UUID = UUID()
@@ -27,6 +29,10 @@ struct StepModeModel: Identifiable {
                 return "Work"
             case .rest:
                 return "Rest"
+            case .rest_between_step:
+                return "Rest Between Step"
+            case .cool_down:
+                return "Cool Down"
         }
     }
     
@@ -38,6 +44,10 @@ struct StepModeModel: Identifiable {
                 return .red
             case .rest:
                 return .blue
+            case .rest_between_step:
+                return .yellow
+            case .cool_down:
+                return .pink
         }
     }
 }

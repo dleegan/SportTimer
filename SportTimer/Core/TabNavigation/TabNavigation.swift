@@ -38,7 +38,7 @@ struct TabNavigation: View {
         TabView(
             selection: $selection,
             content:  {
-                SessionView()
+                Text("Home")
                     .tabItem {
                         Label("Home", systemImage: "house.fill")
                     }.tag(1)

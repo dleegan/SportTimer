@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct SessionView: View {
-    @ObservedObject var vm = SessionViewModel()
+    @Environment(\.modelContext) private var modelContext
+    @ObservedObject var vm: SessionViewModel
     
     var body: some View {
         VStack {
-            HStack {
+            Text(String(format: "%d", vm.counter))
+                .font(.system(size: 120))
+                .fontWeight(.bold)
+                .foregroundStyle(Color.white)
+            
+            Text("\(vm.step!.getName())")
+                .bold()
+                .foregroundStyle(.white)
+
+            List {
+                ForEach(vm.session!) {acti in
+                    Text("\(acti.getName()) " + "\(acti.time)")
+                }
+            }
+        }
+        .background(vm.step!.getColor())
+        .toolbar {
+            ToolbarItem {
                 Button(action: {
                     vm.mode == .paused || vm.mode == .stopped ?
                     vm.start() : vm.pause()
@@ -20,32 +38,17 @@ struct SessionView: View {
                     Image(systemName:
                             vm.mode == .paused || vm.mode == .stopped ?
                           "play.fill" : "pause.fill")
-                    .font(.largeTitle)
                     .foregroundStyle(Color.white)
                 })
             }
-            .frame(maxWidth: .infinity, alignment: .trailing)
-            .padding(.horizontal)
-            
-            Text(String(format: "%d", vm.counter))
-                .font(.system(size: 120))
-                .fontWeight(.bold)
-                .foregroundStyle(Color.white)
-            
-            Text("\(vm.step.getName())")
-                .bold()
-                .foregroundStyle(.white)
-
-            List {
-                ForEach(vm.session) { acti in
-                    Text("\(acti.getName()) " + "\(acti.time)")
-                }
-            }
         }
-        .background(vm.step.getColor())
+        .onDisappear {
+            vm.stop()
+        }
     }
 }
 
-#Preview {
-    SessionView()
-}
+//
+//#Preview {
+//    SessionView(vm: Workout)
+//}
