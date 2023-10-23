@@ -22,25 +22,25 @@ struct WorkoutBuilderView: View {
                 }
                 Section("Workout") {
                     LabeledContent("Prepare", content: {
-                        TextField("0", value: $workout.prepare, formatter: NumberFormatter())
+                        TextField("0", value: $workout.prepare, format: .number)
                     })
                     LabeledContent("Work", content: {
-                        TextField("0", value: $workout.work, formatter: NumberFormatter())
+                        TextField("0", value: $workout.work, format: .number)
                     })
                     LabeledContent("Rest", content: {
-                        TextField("0", value: $workout.rest, formatter: NumberFormatter())
+                        TextField("0", value: $workout.rest, format: .number)
                     })
                     LabeledContent("Cycles", content: {
-                        TextField("0", value: $workout.cycles, formatter: NumberFormatter())
+                        TextField("0", value: $workout.cycles, format: .number)
                     })
                     LabeledContent("Sets", content: {
-                        TextField("0", value: $workout.sets, formatter: NumberFormatter())
+                        TextField("0", value: $workout.sets, format: .number)
                     })
                     LabeledContent("Rest between step", content: {
-                        TextField("0", value: $workout.rest_between_step, formatter: NumberFormatter())
+                        TextField("0", value: $workout.rest_between_step, format: .number)
                     })
                     LabeledContent("Cool down", content: {
-                        TextField("0", value: $workout.cool_down, formatter: NumberFormatter())
+                        TextField("0", value: $workout.cool_down, format: .number)
                     })
                 }
                 .keyboardType(.numberPad)

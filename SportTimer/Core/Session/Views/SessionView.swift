@@ -23,8 +23,18 @@ struct SessionView: View {
                 .foregroundStyle(.white)
 
             List {
-                ForEach(vm.session!) {acti in
-                    Text("\(acti.getName()) " + "\(acti.time)")
+                ForEach(Array(vm.session!.enumerated()), id: \.offset) {(index, acti) in
+                    Button(action: {
+                        vm.changeStep(step: index)
+                    }, label: {
+                        HStack {
+                            Text("\(acti.getName())")
+                            Spacer()
+                            Text("\(acti.time)")
+                        }
+                    })
+                    .tint(.primary)
+                    .listRowBackground(vm.stepId == index ? Color.primary.opacity(0.2) : nil)
                 }
             }
         }

@@ -15,6 +15,7 @@
 		53036D712AC898B1007FDF6D /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53036D702AC898B1007FDF6D /* AppIntent.swift */; };
 		53036D732AC898B2007FDF6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53036D722AC898B2007FDF6D /* Assets.xcassets */; };
 		53036D772AC898B2007FDF6D /* SessionStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53036D662AC898B1007FDF6D /* SessionStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		535135002AE6518400E382C0 /* ScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535134FF2AE6518400E382C0 /* ScreenTest.swift */; };
 		5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF782AC219A1009A8667 /* SportTimerApp.swift */; };
 		5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7A2AC219A1009A8667 /* ContentView.swift */; };
 		5364EF7D2AC219A1009A8667 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7C2AC219A1009A8667 /* Item.swift */; };
@@ -85,6 +86,7 @@
 		53036D702AC898B1007FDF6D /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		53036D722AC898B2007FDF6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53036D742AC898B2007FDF6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535134FF2AE6518400E382C0 /* ScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTest.swift; sourceTree = "<group>"; };
 		5364EF752AC219A1009A8667 /* SportTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5364EF782AC219A1009A8667 /* SportTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerApp.swift; sourceTree = "<group>"; };
 		5364EF7A2AC219A1009A8667 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				539E9F362AC751D4003CE2D1 /* Core */,
 				5364EF7A2AC219A1009A8667 /* ContentView.swift */,
 				5364EF7C2AC219A1009A8667 /* Item.swift */,
+				535134FF2AE6518400E382C0 /* ScreenTest.swift */,
 				5364EF7E2AC219A4009A8667 /* Assets.xcassets */,
 				539E9F402AC775AF003CE2D1 /* Sounds */,
 				5364EF802AC219A4009A8667 /* SportTimer.entitlements */,
@@ -561,6 +564,7 @@
 				53DC5D882AC82E2A0022A6D6 /* SessionsListView.swift in Sources */,
 				53D45F942AD71B5D00D70629 /* WorkoutBuilderView.swift in Sources */,
 				5364EF7D2AC219A1009A8667 /* Item.swift in Sources */,
+				535135002AE6518400E382C0 /* ScreenTest.swift in Sources */,
 				5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */,
 				53DC62402AC822970001AB45 /* TabNavigation.swift in Sources */,
 				539E9F392AC75359003CE2D1 /* StepModeModel.swift in Sources */,
@@ -612,7 +616,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SessionStatus/Info.plist;
@@ -641,7 +645,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SessionStatus/Info.plist;
@@ -787,7 +791,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -831,7 +835,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				ENABLE_HARDENED_RUNTIME = YES;

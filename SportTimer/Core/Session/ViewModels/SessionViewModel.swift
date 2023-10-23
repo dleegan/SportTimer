@@ -90,4 +90,10 @@ class SessionViewModel: ObservableObject {
         self.step = self.session![self.stepId]
         self.counter = self.step!.time
     }
+    
+    func changeStep(step: Int) {
+        self.stepId = step
+        self.step = self.session![self.stepId]
+        self.counter = self.step!.time
+    }
 }
