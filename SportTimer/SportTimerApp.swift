@@ -12,7 +12,7 @@ import SwiftData
 struct SportTimerApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Workout.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +25,7 @@ struct SportTimerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TimerTest()
+            TabNavigation()
         }
         .modelContainer(sharedModelContainer)
     }
