@@ -38,24 +38,37 @@ struct TabNavigation: View {
         TabView(
             selection: $selection,
             content:  {
-                Text("Home")
-                    .tabItem {
-                        Label("Home", systemImage: "house.fill")
-                    }.tag(1)
+                ContentUnavailableView {
+                    Label("Home", systemImage: "house.fill")
+                } description: {
+                    Text("La home arrive bientôt!")
+                }
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
+                }.tag(1)
 
                 SessionsListView()
                     .tabItem {
                         Label("Sessions", systemImage: "stopwatch")
                     }.tag(2)
 
-                Text("Historique")
-                    .tabItem {
-                        Label("Historique", systemImage: "calendar")
-                    }.tag(3)
+                ContentUnavailableView {
+                    Label("Historique", systemImage: "calendar")
+                } description: {
+                    Text("Votre historique sera disponible dans les prochaines màj.")
+                }
+                .tabItem {
+                    Label("Historique", systemImage: "calendar")
+                }.tag(3)
 
-                Text("Tab Content 2")
+//                ContentUnavailableView {
+//                    Label("Profil", systemImage: "person.fill")
+//                } description: {
+//                    Text("Votre profil sera disponible dans les prochaines màj.")
+//                }
+                ProfileView()
                     .tabItem {
-                        Label("Profil", systemImage: "person.circle.fill")
+                        Label("Profil", systemImage: "person.fill")
                     }.tag(4)
             })
             

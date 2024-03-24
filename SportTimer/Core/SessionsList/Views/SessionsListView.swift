@@ -31,21 +31,27 @@ struct SessionsListView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
+            .overlay(content: {
+                if (workouts.isEmpty) {
+                    ContentUnavailableView {
+                        Label("Sessions", systemImage: "stopwatch")
+                    } description: {
+                        Text("Vous n'avez pas de sessions pour le moment. Appuyer sur + pour créer une nouvelle session.")
+                    }
+                }
+            })
             .navigationTitle("Sessions")
             .toolbar {
-                ToolbarItem {
-                    Button(action: {
-                        showEdit.toggle()
-                    }, label: {
-                        Image(systemName: "plus")
-                    })
-                    .navigationDestination(isPresented: $showEdit) {
+                ToolbarItemGroup {
+                    NavigationLink {
                         let newWorkout = Workout(title: "")
                         WorkoutBuilderView(workout: newWorkout)
                             .toolbar(.hidden, for: .tabBar)
                             .onDisappear {
                                 modelContext.insert(newWorkout)
                             }
+                    } label: {
+                        Label("Ajouter", systemImage: "plus")
                     }
                 }
             }

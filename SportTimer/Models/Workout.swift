@@ -10,8 +10,8 @@ import SwiftData
 
 @Model
 class Workout {
-    var title: String
-    var created_at: Date
+    var title: String = ""
+    var created_at: Date = Date.now
     var prepare: Int? = 0
     var work: Int? = 0
     var rest: Int? = 0
@@ -34,6 +34,6 @@ class Workout {
     
     init (title: String) {
         self.title = title
-        self.created_at = Date()
+        self.created_at = Date.now
     }
 }

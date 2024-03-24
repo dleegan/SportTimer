@@ -15,6 +15,7 @@
 		53036D712AC898B1007FDF6D /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53036D702AC898B1007FDF6D /* AppIntent.swift */; };
 		53036D732AC898B2007FDF6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53036D722AC898B2007FDF6D /* Assets.xcassets */; };
 		53036D772AC898B2007FDF6D /* SessionStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53036D662AC898B1007FDF6D /* SessionStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		532564A82BAF3D8F00D183ED /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532564A72BAF3D8F00D183ED /* ProfileView.swift */; };
 		535135002AE6518400E382C0 /* ScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535134FF2AE6518400E382C0 /* ScreenTest.swift */; };
 		5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF782AC219A1009A8667 /* SportTimerApp.swift */; };
 		5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7A2AC219A1009A8667 /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 		53DC5D882AC82E2A0022A6D6 /* SessionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */; };
 		53DC623E2AC811A80001AB45 /* WorkTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC623D2AC811A80001AB45 /* WorkTogether.swift */; };
 		53DC62402AC822970001AB45 /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC623F2AC822970001AB45 /* TabNavigation.swift */; };
+		53DFC1AA2AE82870001CD940 /* BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DFC1A92AE82870001CD940 /* BackgroundManager.swift */; };
 		53E900912AE06399000B77B4 /* WorkoutBuilderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E900902AE06399000B77B4 /* WorkoutBuilderViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,7 @@
 		53036D702AC898B1007FDF6D /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		53036D722AC898B2007FDF6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53036D742AC898B2007FDF6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532564A72BAF3D8F00D183ED /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		535134FF2AE6518400E382C0 /* ScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTest.swift; sourceTree = "<group>"; };
 		5364EF752AC219A1009A8667 /* SportTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5364EF782AC219A1009A8667 /* SportTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerApp.swift; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListView.swift; sourceTree = "<group>"; };
 		53DC623D2AC811A80001AB45 /* WorkTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTogether.swift; sourceTree = "<group>"; };
 		53DC623F2AC822970001AB45 /* TabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
+		53DFC1A92AE82870001CD940 /* BackgroundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundManager.swift; sourceTree = "<group>"; };
 		53E900902AE06399000B77B4 /* WorkoutBuilderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutBuilderViewModel.swift; sourceTree = "<group>"; };
 		53F00B3A2AC727D7009034EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		53F00B3C2AC727D7009034EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -163,6 +167,22 @@
 				53036D742AC898B2007FDF6D /* Info.plist */,
 			);
 			path = SessionStatus;
+			sourceTree = "<group>";
+		};
+		532564A52BAF3D5E00D183ED /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				532564A62BAF3D6D00D183ED /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		532564A62BAF3D6D00D183ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				532564A72BAF3D8F00D183ED /* ProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5364EF6C2AC219A1009A8667 = {
@@ -254,6 +274,7 @@
 		539E9F362AC751D4003CE2D1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				532564A52BAF3D5E00D183ED /* Profile */,
 				539E9F342AC7506D003CE2D1 /* Components */,
 				539E9F372AC75218003CE2D1 /* Session */,
 				53DC62422AC82C390001AB45 /* SessionsList */,
@@ -301,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				539E9F462AC77FAD003CE2D1 /* SoundManager.swift */,
+				53DFC1A92AE82870001CD940 /* BackgroundManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -462,7 +484,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					53036D652AC898B1007FDF6D = {
 						CreatedOnToolsVersion = 15.0;
@@ -553,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DFC1AA2AE82870001CD940 /* BackgroundManager.swift in Sources */,
 				53E900912AE06399000B77B4 /* WorkoutBuilderViewModel.swift in Sources */,
 				53DC623E2AC811A80001AB45 /* WorkTogether.swift in Sources */,
 				539E9F3D2AC75477003CE2D1 /* SessionView.swift in Sources */,
@@ -562,6 +585,7 @@
 				5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */,
 				539E9F4A2AC78065003CE2D1 /* Color.swift in Sources */,
 				53DC5D882AC82E2A0022A6D6 /* SessionsListView.swift in Sources */,
+				532564A82BAF3D8F00D183ED /* ProfileView.swift in Sources */,
 				53D45F942AD71B5D00D70629 /* WorkoutBuilderView.swift in Sources */,
 				5364EF7D2AC219A1009A8667 /* Item.swift in Sources */,
 				535135002AE6518400E382C0 /* ScreenTest.swift in Sources */,
@@ -616,7 +640,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SessionStatus/Info.plist;
@@ -633,9 +657,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -645,7 +673,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SessionStatus/Info.plist;
@@ -662,9 +690,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -703,6 +735,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -764,6 +797,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -791,7 +825,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 17;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -835,7 +870,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 17;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -878,6 +914,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -901,6 +938,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -923,6 +961,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -945,6 +984,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

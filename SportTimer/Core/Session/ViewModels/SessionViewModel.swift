@@ -37,30 +37,30 @@ class SessionViewModel: ObservableObject {
         guard (self.session != nil) else { return }
         mode = .running
 
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            if (self.counter <= 1) {
-                self.stepId += 1
-                if (self.stepId <= self.session!.count - 1) {
-                    self.step = self.session![self.stepId]
-                    self.counter = self.step!.time
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [self] timer in
+            if (counter <= 1) {
+                stepId += 1
+                if (stepId <= session!.count - 1) {
+                    step = session![stepId]
+                    counter = step!.time
                     SoundManager.instance.playSound(stepSound: .whistle)
                 } else {
-                    self.stop()
+                    stop()
                 }
             } else {
-                if (self.counter <= 4) {
+                if (counter <= 4) {
                     SoundManager.instance.playSound(stepSound: .ending)
                 }
-                self.counter -= 1
+                counter -= 1
             }
         }
     }
-    
+
     func pause() {
         timer.invalidate()
         mode = .paused
     }
-    
+
     func stop() {
         timer.invalidate()
         self.stepId = 0
@@ -68,12 +68,12 @@ class SessionViewModel: ObservableObject {
         self.counter = self.step!.time
         mode = .stopped
     }
-    
+
     func generateData(workout: Workout) {
         var item: [StepModeModel] = [StepModeModel(name: .prepare, time: workout.prepare ?? 0)]
         
-        for _ in 0...(workout.sets ?? 0) {
-            for _ in 0...(workout.cycles ?? 0) {
+        for _ in 1...(workout.sets ?? 0) {
+            for _ in 1...(workout.cycles ?? 0) {
                 item.append(StepModeModel(name: .work, time: workout.work ?? 0))
                 item.append(StepModeModel(name: .rest, time: workout.rest ?? 0))
             }
@@ -90,7 +90,7 @@ class SessionViewModel: ObservableObject {
         self.step = self.session![self.stepId]
         self.counter = self.step!.time
     }
-    
+
     func changeStep(step: Int) {
         self.stepId = step
         self.step = self.session![self.stepId]

@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import BackgroundTasks
 
 struct SessionView: View {
+    @Environment(\.scenePhase) private var phase
     @Environment(\.modelContext) private var modelContext
     @ObservedObject var vm: SessionViewModel
     
@@ -22,21 +24,7 @@ struct SessionView: View {
                 .bold()
                 .foregroundStyle(.white)
 
-            List {
-                ForEach(Array(vm.session!.enumerated()), id: \.offset) {(index, acti) in
-                    Button(action: {
-                        vm.changeStep(step: index)
-                    }, label: {
-                        HStack {
-                            Text("\(acti.getName())")
-                            Spacer()
-                            Text("\(acti.time)")
-                        }
-                    })
-                    .tint(.primary)
-                    .listRowBackground(vm.stepId == index ? Color.primary.opacity(0.2) : nil)
-                }
-            }
+            ExtractedView(vm: vm)
         }
         .background(vm.step!.getColor())
         .toolbar {
@@ -55,10 +43,48 @@ struct SessionView: View {
         .onDisappear {
             vm.stop()
         }
+//        .onChange(of: phase, { oldValue, newValue in
+//            switch newValue {
+//                case .background:
+//                    vm.timer.invalidate()
+//                    vm.bgTimer()
+//                case .active:
+//                    if (vm.isOnBg) {
+//                        vm.timerBG.invalidate()
+//                        vm.isOnBg = false
+//                        vm.start()
+//                    }
+//                default: break
+//            }
+//        })
+        
     }
 }
 
-//
+
+struct ExtractedView: View {
+    var vm: SessionViewModel
+
+    var body: some View {
+        List {
+            ForEach(Array(vm.session!.enumerated()), id: \.offset) {(index, acti) in
+                Button(action: {
+                    vm.changeStep(step: index)
+                }, label: {
+                    HStack {
+                        Text("\(acti.getName())")
+                        Spacer()
+                        Text("\(acti.time)")
+                    }
+                })
+                .tint(.primary)
+                .listRowBackground(vm.stepId == index ? Color.primary.opacity(0.2) : nil)
+            }
+        }
+    }
+}
+
+
 //#Preview {
 //    SessionView(vm: Workout)
 //}

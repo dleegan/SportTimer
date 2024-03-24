@@ -6,7 +6,8 @@
 //
 
 import Foundation
-import AVKit
+import AudioToolbox
+import SwiftUI
 
 enum SoundOption: String {
     case whistle
@@ -15,16 +16,24 @@ enum SoundOption: String {
 
 class SoundManager {
     static let instance = SoundManager()
-    var player: AVAudioPlayer?
-    
+
     func playSound(stepSound: SoundOption) {
-        guard let url = Bundle.main.url(forResource: stepSound.rawValue, withExtension: ".wav") else { return }
+        guard let soundURL = Bundle.main.url(forResource: stepSound.rawValue, withExtension: ".wav") else {
+            return
+        }
+        var soundID: SystemSoundID = 0
+        AudioServicesCreateSystemSoundID(soundURL as CFURL, &soundID)
+        AudioServicesPlaySystemSound(soundID)
         
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            player?.play()
-        } catch let error {
-            print("Error playing sound. \(error.localizedDescription)")
+        feetbackWithSound(stepSound: stepSound)
+    }
+
+    func feetbackWithSound(stepSound: SoundOption) {
+        switch stepSound {
+            case .whistle:
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            case .ending:
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         }
     }
 }
