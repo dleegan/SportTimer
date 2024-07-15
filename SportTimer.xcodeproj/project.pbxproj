@@ -16,10 +16,7 @@
 		53036D732AC898B2007FDF6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53036D722AC898B2007FDF6D /* Assets.xcassets */; };
 		53036D772AC898B2007FDF6D /* SessionStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53036D662AC898B1007FDF6D /* SessionStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		532564A82BAF3D8F00D183ED /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532564A72BAF3D8F00D183ED /* ProfileView.swift */; };
-		535135002AE6518400E382C0 /* ScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535134FF2AE6518400E382C0 /* ScreenTest.swift */; };
 		5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF782AC219A1009A8667 /* SportTimerApp.swift */; };
-		5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7A2AC219A1009A8667 /* ContentView.swift */; };
-		5364EF7D2AC219A1009A8667 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF7C2AC219A1009A8667 /* Item.swift */; };
 		5364EF7F2AC219A4009A8667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5364EF7E2AC219A4009A8667 /* Assets.xcassets */; };
 		5364EF832AC219A4009A8667 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5364EF822AC219A4009A8667 /* Preview Assets.xcassets */; };
 		5364EF8E2AC219A4009A8667 /* SportTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364EF8D2AC219A4009A8667 /* SportTimerTests.swift */; };
@@ -35,11 +32,19 @@
 		53B0585C2AC8946900098D50 /* SessionStatusAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B0585B2AC8946900098D50 /* SessionStatusAttributes.swift */; };
 		53D45F922AD7140A00D70629 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D45F912AD7140A00D70629 /* Workout.swift */; };
 		53D45F942AD71B5D00D70629 /* WorkoutBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D45F932AD71B5D00D70629 /* WorkoutBuilderView.swift */; };
+		53D9763D2BB0916B00D6DEBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9763C2BB0916B00D6DEBD /* AppDelegate.swift */; };
+		53D9763F2BB091B500D6DEBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9763E2BB091B500D6DEBD /* SceneDelegate.swift */; };
 		53DC5D882AC82E2A0022A6D6 /* SessionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */; };
 		53DC623E2AC811A80001AB45 /* WorkTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC623D2AC811A80001AB45 /* WorkTogether.swift */; };
 		53DC62402AC822970001AB45 /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DC623F2AC822970001AB45 /* TabNavigation.swift */; };
 		53DFC1AA2AE82870001CD940 /* BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DFC1A92AE82870001CD940 /* BackgroundManager.swift */; };
 		53E900912AE06399000B77B4 /* WorkoutBuilderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E900902AE06399000B77B4 /* WorkoutBuilderViewModel.swift */; };
+		53EBF7FD2BC06FEE00DDE8F4 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBF7FC2BC06FEE00DDE8F4 /* MessagesView.swift */; };
+		53EBF7FF2BC079C800DDE8F4 /* PeerDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBF7FE2BC079C800DDE8F4 /* PeerDevice.swift */; };
+		53EBF8012BC079F400DDE8F4 /* PermitionResquest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBF8002BC079F400DDE8F4 /* PermitionResquest.swift */; };
+		53EBF8042BC07A2C00DDE8F4 /* DeviceFinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBF8032BC07A2C00DDE8F4 /* DeviceFinderViewModel.swift */; };
+		53EBF8062BC07A7100DDE8F4 /* MessengerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBF8052BC07A7100DDE8F4 /* MessengerView.swift */; };
+		53EBF8092BC07C2100DDE8F4 /* SwiftyChat in Frameworks */ = {isa = PBXBuildFile; productRef = 53EBF8082BC07C2100DDE8F4 /* SwiftyChat */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,11 +94,8 @@
 		53036D722AC898B2007FDF6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53036D742AC898B2007FDF6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		532564A72BAF3D8F00D183ED /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		535134FF2AE6518400E382C0 /* ScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTest.swift; sourceTree = "<group>"; };
 		5364EF752AC219A1009A8667 /* SportTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5364EF782AC219A1009A8667 /* SportTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTimerApp.swift; sourceTree = "<group>"; };
-		5364EF7A2AC219A1009A8667 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5364EF7C2AC219A1009A8667 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5364EF7E2AC219A4009A8667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5364EF802AC219A4009A8667 /* SportTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SportTimer.entitlements; sourceTree = "<group>"; };
 		5364EF822AC219A4009A8667 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -113,11 +115,18 @@
 		53B0585B2AC8946900098D50 /* SessionStatusAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionStatusAttributes.swift; path = SportTimer/SessionStatusAttributes.swift; sourceTree = SOURCE_ROOT; };
 		53D45F912AD7140A00D70629 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		53D45F932AD71B5D00D70629 /* WorkoutBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutBuilderView.swift; sourceTree = "<group>"; };
+		53D9763C2BB0916B00D6DEBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53D9763E2BB091B500D6DEBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		53DC5D872AC82E2A0022A6D6 /* SessionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsListView.swift; sourceTree = "<group>"; };
 		53DC623D2AC811A80001AB45 /* WorkTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTogether.swift; sourceTree = "<group>"; };
 		53DC623F2AC822970001AB45 /* TabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
 		53DFC1A92AE82870001CD940 /* BackgroundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundManager.swift; sourceTree = "<group>"; };
 		53E900902AE06399000B77B4 /* WorkoutBuilderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutBuilderViewModel.swift; sourceTree = "<group>"; };
+		53EBF7FC2BC06FEE00DDE8F4 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		53EBF7FE2BC079C800DDE8F4 /* PeerDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerDevice.swift; sourceTree = "<group>"; };
+		53EBF8002BC079F400DDE8F4 /* PermitionResquest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermitionResquest.swift; sourceTree = "<group>"; };
+		53EBF8032BC07A2C00DDE8F4 /* DeviceFinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFinderViewModel.swift; sourceTree = "<group>"; };
+		53EBF8052BC07A7100DDE8F4 /* MessengerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerView.swift; sourceTree = "<group>"; };
 		53F00B3A2AC727D7009034EC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		53F00B3C2AC727D7009034EC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -136,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EBF8092BC07C2100DDE8F4 /* SwiftyChat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,15 +221,14 @@
 		5364EF772AC219A1009A8667 /* SportTimer */ = {
 			isa = PBXGroup;
 			children = (
+				53D9763C2BB0916B00D6DEBD /* AppDelegate.swift */,
+				53D9763E2BB091B500D6DEBD /* SceneDelegate.swift */,
 				5364EF782AC219A1009A8667 /* SportTimerApp.swift */,
 				53B0585B2AC8946900098D50 /* SessionStatusAttributes.swift */,
 				539E9F452AC77F6B003CE2D1 /* Utilities */,
 				539E9F482AC78033003CE2D1 /* Extensions */,
 				539E9F352AC7507A003CE2D1 /* Models */,
 				539E9F362AC751D4003CE2D1 /* Core */,
-				5364EF7A2AC219A1009A8667 /* ContentView.swift */,
-				5364EF7C2AC219A1009A8667 /* Item.swift */,
-				535134FF2AE6518400E382C0 /* ScreenTest.swift */,
 				5364EF7E2AC219A4009A8667 /* Assets.xcassets */,
 				539E9F402AC775AF003CE2D1 /* Sounds */,
 				5364EF802AC219A4009A8667 /* SportTimer.entitlements */,
@@ -267,6 +276,8 @@
 				539E9F382AC75359003CE2D1 /* StepModeModel.swift */,
 				53DC623D2AC811A80001AB45 /* WorkTogether.swift */,
 				53D45F912AD7140A00D70629 /* Workout.swift */,
+				53EBF7FE2BC079C800DDE8F4 /* PeerDevice.swift */,
+				53EBF8002BC079F400DDE8F4 /* PermitionResquest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +285,7 @@
 		539E9F362AC751D4003CE2D1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				53EBF7FA2BC06FC300DDE8F4 /* Messages */,
 				532564A52BAF3D5E00D183ED /* Profile */,
 				539E9F342AC7506D003CE2D1 /* Components */,
 				539E9F372AC75218003CE2D1 /* Session */,
@@ -392,6 +404,32 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		53EBF7FA2BC06FC300DDE8F4 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				53EBF8022BC07A1C00DDE8F4 /* ViewModels */,
+				53EBF7FB2BC06FCD00DDE8F4 /* Views */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		53EBF7FB2BC06FCD00DDE8F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53EBF7FC2BC06FEE00DDE8F4 /* MessagesView.swift */,
+				53EBF8052BC07A7100DDE8F4 /* MessengerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53EBF8022BC07A1C00DDE8F4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				53EBF8032BC07A2C00DDE8F4 /* DeviceFinderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		53F00B392AC727D7009034EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +474,9 @@
 				53036D762AC898B2007FDF6D /* PBXTargetDependency */,
 			);
 			name = SportTimer;
+			packageProductDependencies = (
+				53EBF8082BC07C2100DDE8F4 /* SwiftyChat */,
+			);
 			productName = SportTimer;
 			productReference = 5364EF752AC219A1009A8667 /* SportTimer.app */;
 			productType = "com.apple.product-type.application";
@@ -511,6 +552,9 @@
 				Base,
 			);
 			mainGroup = 5364EF6C2AC219A1009A8667;
+			packageReferences = (
+				53EBF8072BC07BE800DDE8F4 /* XCRemoteSwiftPackageReference "SwiftyChat" */,
+			);
 			productRefGroup = 5364EF762AC219A1009A8667 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -577,18 +621,22 @@
 			files = (
 				53DFC1AA2AE82870001CD940 /* BackgroundManager.swift in Sources */,
 				53E900912AE06399000B77B4 /* WorkoutBuilderViewModel.swift in Sources */,
+				53EBF8062BC07A7100DDE8F4 /* MessengerView.swift in Sources */,
+				53EBF7FD2BC06FEE00DDE8F4 /* MessagesView.swift in Sources */,
+				53EBF7FF2BC079C800DDE8F4 /* PeerDevice.swift in Sources */,
 				53DC623E2AC811A80001AB45 /* WorkTogether.swift in Sources */,
 				539E9F3D2AC75477003CE2D1 /* SessionView.swift in Sources */,
 				539E9F3F2AC7548D003CE2D1 /* SessionViewModel.swift in Sources */,
 				53D45F922AD7140A00D70629 /* Workout.swift in Sources */,
 				53B0585C2AC8946900098D50 /* SessionStatusAttributes.swift in Sources */,
-				5364EF7B2AC219A1009A8667 /* ContentView.swift in Sources */,
+				53EBF8042BC07A2C00DDE8F4 /* DeviceFinderViewModel.swift in Sources */,
+				53D9763F2BB091B500D6DEBD /* SceneDelegate.swift in Sources */,
 				539E9F4A2AC78065003CE2D1 /* Color.swift in Sources */,
+				53D9763D2BB0916B00D6DEBD /* AppDelegate.swift in Sources */,
 				53DC5D882AC82E2A0022A6D6 /* SessionsListView.swift in Sources */,
+				53EBF8012BC079F400DDE8F4 /* PermitionResquest.swift in Sources */,
 				532564A82BAF3D8F00D183ED /* ProfileView.swift in Sources */,
 				53D45F942AD71B5D00D70629 /* WorkoutBuilderView.swift in Sources */,
-				5364EF7D2AC219A1009A8667 /* Item.swift in Sources */,
-				535135002AE6518400E382C0 /* ScreenTest.swift in Sources */,
 				5364EF792AC219A1009A8667 /* SportTimerApp.swift in Sources */,
 				53DC62402AC822970001AB45 /* TabNavigation.swift in Sources */,
 				539E9F392AC75359003CE2D1 /* StepModeModel.swift in Sources */,
@@ -640,7 +688,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SessionStatus/Info.plist;
@@ -673,7 +721,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SessionStatus/Info.plist;
@@ -825,7 +873,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 21;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
@@ -835,6 +883,7 @@
 				INFOPLIST_FILE = SportTimer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SportTimer.one;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Use to send messages without wifi ";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -870,7 +919,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SportTimer/SportTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 21;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SportTimer/Preview Content\"";
 				DEVELOPMENT_TEAM = 2G65FHL8TB;
@@ -880,6 +929,7 @@
 				INFOPLIST_FILE = SportTimer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SportTimer.one;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Use to send messages without wifi ";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -1050,6 +1100,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53EBF8072BC07BE800DDE8F4 /* XCRemoteSwiftPackageReference "SwiftyChat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EnesKaraosman/SwiftyChat.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53EBF8082BC07C2100DDE8F4 /* SwiftyChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53EBF8072BC07BE800DDE8F4 /* XCRemoteSwiftPackageReference "SwiftyChat" */;
+			productName = SwiftyChat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5364EF6D2AC219A1009A8667 /* Project object */;
 }

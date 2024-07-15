@@ -32,7 +32,7 @@ enum tabTitle: Int, Title_Enum {
 }
 
 struct TabNavigation: View {
-    @State var selection = 2
+    @State var selection = 4
 
     var body: some View {
         TabView(
@@ -61,15 +61,15 @@ struct TabNavigation: View {
                     Label("Historique", systemImage: "calendar")
                 }.tag(3)
 
-//                ContentUnavailableView {
-//                    Label("Profil", systemImage: "person.fill")
-//                } description: {
-//                    Text("Votre profil sera disponible dans les prochaines màj.")
-//                }
+                MessagesView()
+                    .tabItem {
+                        Label("Messages", systemImage: "message.fill")
+                    }.tag(4)
+
                 ProfileView()
                     .tabItem {
                         Label("Profil", systemImage: "person.fill")
-                    }.tag(4)
+                    }.tag(5)
             })
             
     }

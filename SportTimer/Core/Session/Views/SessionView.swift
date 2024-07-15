@@ -7,6 +7,7 @@
 
 import SwiftUI
 import BackgroundTasks
+import UserNotifications
 
 struct SessionView: View {
     @Environment(\.scenePhase) private var phase
@@ -19,12 +20,13 @@ struct SessionView: View {
                 .font(.system(size: 120))
                 .fontWeight(.bold)
                 .foregroundStyle(Color.white)
+                .contentTransition(.numericText(value: Double(vm.counter)))
             
             Text("\(vm.step!.getName())")
                 .bold()
                 .foregroundStyle(.white)
-
-            ExtractedView(vm: vm)
+            
+            myListItems
         }
         .background(vm.step!.getColor())
         .toolbar {
@@ -40,39 +42,24 @@ struct SessionView: View {
                 })
             }
         }
-        .onDisappear {
-            vm.stop()
-        }
-//        .onChange(of: phase, { oldValue, newValue in
-//            switch newValue {
-//                case .background:
-//                    vm.timer.invalidate()
-//                    vm.bgTimer()
-//                case .active:
-//                    if (vm.isOnBg) {
-//                        vm.timerBG.invalidate()
-//                        vm.isOnBg = false
-//                        vm.start()
-//                    }
-//                default: break
-//            }
-//        })
-        
+        .onAppear(perform: {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.badge,.sound,.alert]) { (_, _) in
+            }
+        })
+        //        .onDisappear {
+        //            vm.stop()
+        //        }
     }
-}
 
 
-struct ExtractedView: View {
-    var vm: SessionViewModel
-
-    var body: some View {
+    private var myListItems: some View {
         List {
             ForEach(Array(vm.session!.enumerated()), id: \.offset) {(index, acti) in
                 Button(action: {
                     vm.changeStep(step: index)
                 }, label: {
                     HStack {
-                        Text("\(acti.getName())")
+                        Text("\(index). \(acti.getName())")
                         Spacer()
                         Text("\(acti.time)")
                     }
@@ -83,7 +70,6 @@ struct ExtractedView: View {
         }
     }
 }
-
 
 //#Preview {
 //    SessionView(vm: Workout)

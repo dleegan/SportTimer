@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import ActivityKit
+import UserNotifications
 
 enum stopWatchMode {
     case running
@@ -44,6 +45,7 @@ class SessionViewModel: ObservableObject {
                     step = session![stepId]
                     counter = step!.time
                     SoundManager.instance.playSound(stepSound: .whistle)
+                    self.Notify()
                 } else {
                     stop()
                 }
@@ -51,7 +53,9 @@ class SessionViewModel: ObservableObject {
                 if (counter <= 4) {
                     SoundManager.instance.playSound(stepSound: .ending)
                 }
-                counter -= 1
+                withAnimation {
+                    counter -= 1
+                }
             }
         }
     }
@@ -95,5 +99,19 @@ class SessionViewModel: ObservableObject {
         self.stepId = step
         self.step = self.session![self.stepId]
         self.counter = self.step!.time
+        self.Notify()
+    }
+    
+    func Notify(){
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Message"
+        content.body = "Timer Is Completed Step has change In Background !!!"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        
+        let req = UNNotificationRequest(identifier: "MSG", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
     }
 }
